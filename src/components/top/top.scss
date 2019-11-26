@@ -1,0 +1,18 @@
+.top {
+    color: #000;
+    background-color: #212d44;
+    height: 7%;
+    img {
+        width: 60%;
+        margin-left: 3%;
+    }
+    .topRight {
+        right: 20px;
+        position: absolute;
+        color: #fff;
+        display: flex;
+        svg {
+            margin-left: 20px;
+        }
+    }
+}
