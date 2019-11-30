@@ -21,4 +21,43 @@
     .carousel-item {
         text-align: center;
     }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0vw !important;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 5vw;
+        color: #fff;
+        text-align: center;
+        @media screen and (max-width: 375px) {
+            right: 50% !important;
+            h1 {
+                font-size: 3vw;
+            }
+            button {
+                font-size: 1vw;
+            }
+        }
+        @media screen and (min-width: 376px) and (max-width: 1024px) {
+            right: 47% !important;
+            h1 {
+                font-size: 3vw;
+            }
+            button {
+                font-size: 1vw;
+            }
+        }
+        @media screen and (min-width: 1025px) {
+            right: 24% !important;
+            h1 {
+                font-size: 3vw;
+            }
+            button {
+                font-size: 1vw;
+            }
+        }
+        
+    }
 }
