@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_SUCCESS, GET_ERROR } from '../types/search';
+import { GET_SUCCESS, GET_ERROR } from '../types/gallery';
 
 const getSuccess = data => ({
   type: GET_SUCCESS,
@@ -16,7 +16,7 @@ const getError = error => ({
 });
 
 export default () => dispatch => axios.get(
-  `http://www.mocky.io/v2/5ddc34683400008f9deae20b`,
+  `http://demo7281787.mockable.io/gallery`,
 )
   .then(({ data }) => dispatch(getSuccess(data)))
   .catch(error => dispatch(getError(error)));
