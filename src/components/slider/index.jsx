@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Carousel, Jumbotron, Button, Image } from 'react-bootstrap'
+import Carousel from 'react-bootstrap/Carousel'
+import Image from 'react-bootstrap/Image'
 
 import './slider.scss';
 
@@ -17,30 +18,12 @@ class Slider extends Component {
         <Carousel className="slider">
             <Carousel.Item>
               <Image src={schoolImg} fluid/>
-              <Carousel.Caption>
-                  <h1>All Saints C of E First School & Busy Bees Pre-School</h1>
-                  <p>
-                    <Button variant="primary">FIND OUT MORE</Button>
-                  </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <Image src={schoolImg} fluid/>
-              <Carousel.Caption>
-                  <h1>All Saints C of E First School & Busy Bees Pre-School</h1>
-                  <p>
-                    <Button variant="primary">FIND OUT MORE</Button>
-                  </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <Image src={schoolImg} fluid/>
-              <Carousel.Caption>
-                  <h1>All Saints C of E First School & Busy Bees Pre-School</h1>
-                  <p>
-                    <Button variant="primary">FIND OUT MORE</Button>
-                  </p>
-              </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );
