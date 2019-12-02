@@ -14,7 +14,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <Container className="footer" xs={{ order: 12 }} md={{ order: 12 }} lg={{ order: 12 }}>
+      <Container className="footer" xs={{ order: 12 }} md={{ order: 12 }} lg={{ order: 12 }} data-test="footer">
           <Row>
             <Col md='6' xs='6' xl='6' lg='6'>
               <Row style={{padding: '2%'}}>

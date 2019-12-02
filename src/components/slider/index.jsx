@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Carousel, Jumbotron, Button, Image } from 'react-bootstrap'
+import { Carousel, Button, Image } from 'react-bootstrap'
 
 import './slider.scss';
 
@@ -14,7 +14,7 @@ class Slider extends Component {
 
   render() {
     return (
-        <Carousel className="slider">
+        <Carousel className="slider" data-test="slider">
             <Carousel.Item>
               <Image src={schoolImg} fluid/>
               <Carousel.Caption>

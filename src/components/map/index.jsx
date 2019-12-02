@@ -17,7 +17,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div className="map">
+      <div className="map" data-test="map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: '' }}
           defaultCenter={this.state.center}

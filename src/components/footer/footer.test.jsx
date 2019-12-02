@@ -1,12 +1,15 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme, { shallow } from 'enzyme';
 import { expect } from 'chai';
 
 import Footer from './index';
 
+Enzyme.configure({ adapter: new Adapter() });
+
 describe('<Footer />', () => {
   it('Should renders the Footer component', () => {
-    const wrapper = shallow(<Footer />);
-    expect(wrapper.find('footer')).to.have.lengthOf(1);
+    const component = shallow(<Footer />);
+    expect(component.find('[data-test="footer"]').exists()).equal(true);
   });
 });

@@ -15,7 +15,7 @@ class Bottom extends Component {
 
   render() {
     return (
-      <Navbar className="bottom" >
+      <Navbar className="bottom" data-test="bottom">
         <Col xs>
           <Image src={socialImg} />
         </Col>

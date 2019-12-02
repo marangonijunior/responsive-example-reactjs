@@ -1,12 +1,15 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme, { shallow } from 'enzyme';
 import { expect } from 'chai';
 
 import Bottom from './index';
 
+Enzyme.configure({ adapter: new Adapter() });
+
 describe('<Bottom />', () => {
   it('Should renders the Bottom component', () => {
-    const wrapper = shallow(<Bottom />);
-    expect(wrapper.find('bottom')).to.have.lengthOf(1);
+    const component = shallow(<Bottom />);
+    expect(component.find('[data-test="bottom"]').exists()).equal(true);
   });
 });

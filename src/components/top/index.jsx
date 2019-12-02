@@ -15,7 +15,7 @@ class Top extends Component {
 
   render() {
     return (
-      <Navbar className="top">
+      <Navbar className="top" data-test="top">
         <Navbar.Brand href="#home">
           <Image src={logoImg} fluid/>
         </Navbar.Brand>
